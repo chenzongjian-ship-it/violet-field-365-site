@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="光域 365 智能电蚊拍沉浸式产品体验，展示紫光诱蚊、高压捕获、三层安全电网与双模式设计。"
+    />
+    <meta name="theme-color" content="#05060a" />
+    <title>光域 365 | 智能电蚊拍</title>
+    <script type="module" crossorigin src="./assets/index-CMy75oNQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DUqNlErB.css">
+  </head>
+  <body data-scene="0" data-mode="auto">
+    <div class="preloader" aria-hidden="true">
+      <canvas class="preloader__canvas" aria-hidden="true"></canvas>
+      <div class="preloader__mark">VF</div>
+      <div class="preloader__track"><span></span></div>
+      <p class="preloader__status" data-load-status>CALIBRATING VIOLET FIELD</p>
+      <strong class="preloader__progress" data-load-progress>00%</strong>
+    </div>
+
+    <canvas id="webgl" aria-hidden="true"></canvas>
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="contrast-veil" aria-hidden="true"></div>
+    <div class="cursor-field" aria-hidden="true"><span></span></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand__mark">VF</span>
+        <span class="brand__name">VIOLET FIELD <small>365</small></span>
+      </a>
+
+      <div class="chapter-status" aria-hidden="true">
+        <span class="chapter-status__current">01</span>
+        <span class="chapter-status__line"><i></i></span>
+        <span>07</span>
+      </div>
+
+      <button class="icon-button sound-toggle" type="button" aria-label="开启环境音" title="环境音">
+        <i class="sound-on" data-lucide="volume-2"></i>
+        <i class="sound-off" data-lucide="volume-x"></i>
+      </button>
+      <button class="icon-button quality-toggle" type="button" aria-label="打开画质设置" title="画质设置">
+        <i data-lucide="sliders-horizontal"></i>
+      </button>
+      <div class="quality-menu" hidden aria-label="画质设置">
+        <span>QUALITY</span>
+        <button type="button" data-quality-option="high">HIGH</button>
+        <button type="button" data-quality-option="medium">MED</button>
+        <button type="button" data-quality-option="low">LOW</button>
+        <output data-quality-state>自动</output>
+      </div>
+    </header>
+
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <main id="top">
+      <section class="chapter chapter--hero is-active" data-scene="0" id="hero">
+          <div class="media-layer media-layer--hero" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner chapter__inner--hero">
+          <div class="hero-copy">
+            <p class="eyebrow reveal">VIOLET FIELD / NIGHT SYSTEM 01</p>
+            <h1 class="reveal">
+              <span>光域 365</span>
+              <em>智能电蚊拍</em>
+            </h1>
+            <p class="hero-copy__lead reveal">一束光，重建夜的边界。</p>
+            <div class="hero-specs reveal" aria-label="核心参数">
+              <div><strong>365</strong><span>nm 仿生紫光</span></div>
+              <div><strong>2700</strong><span>V 瞬时高压</span></div>
+              <div><strong>319</strong><span>g 轻量设计</span></div>
+            </div>
+            <a class="text-command reveal" href="#sensing">
+              <span>进入紫光场</span>
+              <i data-lucide="arrow-down"></i>
+            </a>
+          </div>
+
+          <p class="hero-index" aria-hidden="true">01 / 07</p>
+        </div>
+      </section>
+
+      <section class="chapter chapter--sensing" data-scene="1" id="sensing">
+        <div class="media-layer media-layer--right" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner">
+          <div class="copy-block copy-block--left">
+            <p class="chapter-number reveal">02 / VIOLET SENSING</p>
+            <h2 class="reveal">让光先于你<br /><em>发现靠近。</em></h2>
+            <p class="body-copy reveal">
+              365nm 仿生紫光向空间展开。它不是持续炫目的装饰，而是一张安静、克制、具有方向感的感知场。
+            </p>
+            <div class="spec-row reveal">
+              <div><strong>360°</strong><span>环绕发光</span></div>
+              <div><strong>≈15m</strong><span>有效范围</span></div>
+            </div>
+          </div>
+          <div class="spatial-label spatial-label--uv" aria-hidden="true">
+            <i data-lucide="scan-line"></i>
+            <span>UV FIELD ACTIVE</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--strike" data-scene="2" id="strike">
+        <div class="media-layer media-layer--left" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner chapter__inner--safe-left">
+          <div class="copy-block copy-block--safe">
+            <p class="chapter-number reveal">03 / INSTANT RESPONSE</p>
+            <p class="giant-value reveal"><span>2700</span>V</p>
+            <h2 class="reveal">只在接触瞬间，<br /><em>释放能量。</em></h2>
+            <p class="body-copy reveal">
+              蚊虫进入电网中心层后，电弧在极短时间内完成闭合。画面强调“瞬时响应”，不把危险感做成持续闪烁。
+            </p>
+            <button class="zap-trigger reveal" type="button">
+              <i data-lucide="zap"></i>
+              <span>触发一次能量脉冲</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--safety" data-scene="3" id="safety">
+        <div class="media-layer media-layer--right media-layer--layers" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner chapter__inner--safe-left">
+          <div class="copy-block copy-block--safe copy-block--compact">
+            <p class="chapter-number reveal">04 / SAFE ARCHITECTURE</p>
+            <h2 class="reveal">三层高密电网，<br /><em>能量有边界。</em></h2>
+            <p class="body-copy reveal">外层负责隔离，中层负责捕获。结构在滚动中依次展开，让安全逻辑看得见。</p>
+
+            <ol class="layer-list reveal">
+              <li><span>01</span><strong>外层安全网</strong><small>降低误触风险</small></li>
+              <li><span>02</span><strong>高压捕获网</strong><small>能量集中于中心层</small></li>
+              <li><span>03</span><strong>外层安全网</strong><small>形成双侧防护</small></li>
+            </ol>
+          </div>
+          <div class="safety-seal" aria-label="三层防护">
+            <i data-lucide="shield-check"></i>
+            <span>3-LAYER<br />PROTECTION</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--modes" data-scene="4" id="modes">
+        <div class="media-layer media-layer--left media-layer--modes" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner chapter__inner--safe-left">
+          <div class="copy-block copy-block--safe">
+            <p class="chapter-number reveal">05 / DUAL BEHAVIOR</p>
+            <h2 class="reveal">一拍两用，<br /><em>由你决定节奏。</em></h2>
+
+            <div class="mode-switch reveal" role="group" aria-label="灭蚊模式">
+              <button type="button" data-mode-option="manual" aria-pressed="false">手动灭蚊</button>
+              <button class="is-selected" type="button" data-mode-option="auto" aria-pressed="true">自动诱蚊</button>
+            </div>
+
+            <div class="mode-copy reveal" aria-live="polite">
+              <p data-mode-copy="auto">放回底座，紫光场自动展开。适合在夜间持续守候。</p>
+              <p data-mode-copy="manual" hidden>轻量握持，快速挥拍。能量随动作产生短促轨迹。</p>
+            </div>
+
+            <div class="mode-state reveal" aria-hidden="true">
+              <span></span>
+              <strong>AUTO FIELD / ACTIVE</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--power" data-scene="5" id="power">
+        <div class="media-layer media-layer--right media-layer--power" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner">
+          <div class="copy-block copy-block--left">
+            <p class="chapter-number reveal">06 / ENERGY CORE</p>
+            <h2 class="reveal">能量被收进<br /><em>轻盈的手柄。</em></h2>
+            <p class="body-copy reveal">绿色只属于电芯，紫色只属于捕获网。通过颜色分工，内部结构一眼可读。</p>
+
+            <div
+              class="charge-meter reveal"
+              role="progressbar"
+              aria-label="电芯充电进度"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+            >
+              <div class="charge-meter__head">
+                <span><i data-lucide="battery-charging"></i> CHARGING</span>
+                <strong data-charge-value>0%</strong>
+              </div>
+              <div class="charge-meter__track"><i></i></div>
+            </div>
+
+            <div class="power-facts reveal">
+              <p><strong>1–2h</strong><span>充电时间</span></p>
+              <p><strong>≈10天</strong><span>手动模式参考续航</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--calm" data-scene="6" id="calm">
+        <div class="media-layer media-layer--calm" aria-hidden="true">
+          <img src="./assets/environment-clean.webp" alt="" />
+        </div>
+        <div class="chapter__shade"></div>
+
+        <div class="chapter__inner chapter__inner--calm">
+          <div class="calm-copy">
+            <p class="chapter-number reveal">07 / RETURN TO QUIET</p>
+            <h2 class="reveal">整夜守候，<br /><em>安静留给生活。</em></h2>
+            <p class="body-copy reveal">光场收束回网面，房间重新恢复温度。真正高级的技术，最后应该隐入日常。</p>
+            <a class="primary-command reveal" href="mailto:hello@example.com">
+              <span>了解产品方案</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+
+          <div class="final-spec reveal" aria-hidden="true">
+            <span>365nm</span><i></i><span>2700V</span><i></i><span>319g</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>VIOLET FIELD / PRODUCT EXPERIENCE PROTOTYPE</p>
+      <p>产品参数请以说明书及检测资料为准</p>
+    </footer>
+
+  </body>
+</html>
